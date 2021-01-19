@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Calculator</title>
+    <link rel="stylesheet" href="Cal.css">
+</head>
+<body>
+    <!--A ideia é que o usuário digite dois valores e a operação escolhida, que aparecerão em um visor e após aperto um botão o resultado será exibido
+    
+    Apenas funções normais encontradas em calculadoras normais-->
+    <form id="calform"  action="">
+        <fieldset><!-- 'fieldset' agrupa elementos-->
+            <legend class="text"> MyCalculator </legend>
+            
+            <label for="valor1">Valor 2:</label>
+            <input type="text" id="valor1"> 
+
+            <label for="valor2">Valor 1:</label>
+            <input type="text" id="valor2"> 
+
+            <label for="operação">Operação:</label>
+            <select name="operação" id="operação">
+                <option value="Somar">Soma</option>
+                <option value="Subtrair">Subtração</option>
+                <option value="Dividir">Divisão</option>
+                <option value="Multiplicar">Multiplicação</option>
+            </select>
+
+            <label for="resposta">Resultado:</label>
+            <input type="text" name="resposta" id="resposta">
+
+            <input type="button" value="Calcular" class="botão" onclick="calcular()">
+            <div id="area"></div>
+        </fieldset>
+    </form>
+
+    <script src="Cal.js"></script>
+</body>
+</html>
