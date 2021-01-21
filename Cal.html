@@ -31,11 +31,10 @@
             <label for="resposta">Resultado:</label>
             <input type="text" name="resposta" id="resposta">
 
-            <input type="button" value="Calcular" class="botão" onclick="calcular()">
-            <div id="area"></div>
+            <input type="button" value="Calcular" class="botão" onclick="calcular(document.calform.operação.value)">
+            
         </fieldset>
     </form>
-
-    <script src="Cal.js"></script>
+    <script type="text/javascript" src="Cal.js"></script>
 </body>
 </html>
